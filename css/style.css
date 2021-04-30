@@ -1,0 +1,259 @@
+body{
+    margin: 0;
+}
+header{
+    width: 100%;
+    background: grey;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+}
+.nav ul{
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+}
+.nav ul:nth-child(1) p{
+    margin: 0;
+    position: relative;
+}
+.fol{
+    position: absolute;
+    left: 0;
+    bottom: -28px;
+    color: white;
+    background: rgb(218, 214, 214);
+    padding: 5px 2px;
+    border-radius: 10px;
+}
+.nav ul:nth-child(2){
+    display: flex;
+    justify-content: space-between;
+    width: 400px;
+    align-items: center;
+}
+.nav ul:nth-child(2) li{
+    padding: 15px 0;
+}
+.nav ul:nth-child(2) li a{
+    text-decoration: none;
+    color: white;
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 10px 14px;
+}
+.nav ul:nth-child(2) li .sign{
+    background-color: green;
+    color: black;
+}
+
+.toggleIcon{
+    display: none;
+}
+.toggleIcon li a i{
+    color: white;
+    font-size: 30px;
+    padding: 6px;
+}
+
+main{
+    background-color: green;
+    width: 100%;
+    height: 100%;
+}
+
+.mainblock{
+    width: 90%;
+    margin: auto;
+    padding-top: 30px;
+}
+.mainlist{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 70px;
+}
+.mainlist ul{
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+}
+.mainlist ul:nth-child(1) li{
+    font-size: 40px;
+    font-weight: 100;
+}
+.mainlist li{
+    color: white;
+}
+.mainlist li h2{
+    margin: 0;
+    font-size: 20px;
+    font-weight: 100;
+}
+
+.mainlist ol{
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+    margin-top: 10px;
+}
+.mainlist ol li{
+    font-size: 15px;
+}
+
+.blocks{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-bottom: 60px;
+}
+.firstblock{
+    width: 65%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap:10px;
+}
+.secondblock{
+    width: 25%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+}
+.card12{
+    grid-column: 1/2;
+    background-color: rgb(148, 148, 197);
+}
+.card13{
+    grid-column: 2/3;
+    background-color: lightblue;
+}
+.card14{
+    grid-column: 1/2;
+    background-color: red;
+}
+.card15{
+    grid-column: 2/3;
+    background-color: pink;
+}
+.card16{
+    grid-column: 1/3;
+    background-color: orange;
+}
+.firstblock1line{
+    grid-column: 1/3;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+}
+
+.firstblock2line{
+    grid-column: 3/6;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+}
+
+.card{
+    height: 120px;
+}
+.card1{
+    background-color: rgb(148, 148, 197);
+    grid-column: 1/3;
+}
+.card2{
+    background-color: lightgreen;
+    grid-column: 1/2;
+}
+.card3{
+    background-color: lightblue;
+    grid-column: 2/3;
+}
+.card4{
+    background-color: red;
+    grid-column: 1/2;
+}
+.card5{
+    background-color: orange;
+    grid-column: 2/3;
+}
+.card6{
+    background-color: orange;
+    grid-column: 1/3;
+}
+.card7{
+    background-color:red;
+    grid-column: 3/4;
+}
+
+.card8{
+    background-color: yellow;
+    grid-column: 1/2;
+}
+.card9{
+    background-color: lightgreen;
+    grid-column: 2/4;
+}
+.card10{
+    background-color:  rgb(148, 148, 197);
+    grid-column: 1/3;
+}
+.card11{
+    background-color:lightgreen;
+    grid-column: 3/4;
+}
+
+.card .cardcont{
+    text-align: center;
+    padding-top: 30px;
+}
+
+.card i{
+    font-size: 40px;
+    color: white;
+}
+.card p{
+    color: white;
+    margin-left: 5px;
+    margin-top: 25px;
+    margin-bottom: 0;
+}
+
+
+
+@media screen and (max-width:1006px){
+    
+    .blocks{
+        flex-direction: column;
+    }
+    .firstblock{
+        width: 100%;
+        margin: auto;
+    }
+
+    .secondblock{
+        width: 100%;
+        margin: auto;
+        margin-top: 50px;
+    }
+}
+
+@media screen and (max-width:584px){
+    .firstblock{
+        display: inline-block;
+    }
+    .firstblock1line{
+        margin-bottom: 30px;
+    }
+    
+    header{
+        height: 14vh;
+    }
+    .nav ul:nth-child(2){
+        display: none;
+    }
+    .toggleIcon{
+        display: block;
+    }
+}
